@@ -1,6 +1,9 @@
 #!/bin/sh
 
-git clone --depth 1 https://github.com/SGpp/SGpp.git && cd SGpp
+cd /tmp
+git clone https://github.com/SGpp/SGpp.git && cd SGpp
+# git cherry-pick 
+patch -p1 -i ${RECIPE_DIR}/osx.patch
 
 if test `uname` = "Darwin"
 then
