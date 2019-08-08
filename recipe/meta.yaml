@@ -8,8 +8,8 @@ source:
   fn: sgpp-{{ version }}.tar.gz
   url: https://github.com/SGpp/SGpp/archive/v{{ version }}.tar.gz
   sha256: dab83587fd447f92ed8546eacaac6b8cbe65b8db5e860218c0fa2e42f776962d
-  patches:
-    - osx.patch
+  #patches:
+  #  - osx.patch
 
 build:
   number: 0
