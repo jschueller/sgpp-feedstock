@@ -25,10 +25,12 @@ requirements:
     - setuptools
     - python
     - numpy
+    - llvm-openmp  # [osx]
   run:
     - python
     - {{ pin_compatible('numpy') }}
     - scipy
+    - llvm-openmp  # [osx]
 
 test:
   imports:
